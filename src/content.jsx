@@ -150,6 +150,10 @@ function Content(props) {
         sx={{
           width: '80vw',
           visibility: password ? 'visible' : 'hidden',
+          '& input': {
+            padding: '10px', // Adjust padding as needed
+            textAlign: 'center', // Center align text
+          },
         }}
         disabled
         value={password}
