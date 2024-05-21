@@ -9,22 +9,18 @@ const Main = () => {
   return (
     <Box>
       {/* header */}
-      <AppBar
-        sx={{
-          height: '10%',
-        }}
-      >
+      <AppBar position='sticky'>
         <Toolbar>
           <Typography>Password Generator</Typography>
         </Toolbar>
       </AppBar>
 
       <Box
-        mt='10%'
         display='flex'
         flexDirection='column'
         justifyContent='center'
         alignItems='center'
+        p={2}
       >
         <Content />
       </Box>
